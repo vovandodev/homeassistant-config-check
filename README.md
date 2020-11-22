@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - run: mv secrets.yaml.tmpl secrets.yaml
-      - uses: vovando/homeassistant-config-check@master
+      - uses: vovandodev/homeassistant-config-check@master
         with:
           ha_version: "latest"
         env:

@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vovando/homeassistant-config-check:$(date +%s)
+      run: docker build . --file Dockerfile --tag vovandodev/homeassistant-config-check:$(date +%s)
