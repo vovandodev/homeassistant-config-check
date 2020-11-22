@@ -1,0 +1,16 @@
+name: 'Config Checker for Home Assistant'
+description: 'Checks Home Assistant configuration against specified HA version'
+author: 'Volodymyr Vrublevskyy'
+branding:
+  color: yellow
+  icon: home
+inputs:
+  ha_version:
+    description: 'HA version to use'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.ha_version }}
